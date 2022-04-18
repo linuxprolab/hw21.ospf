@@ -71,7 +71,7 @@ O>* 192.168.20.0/24 [110/200] via 10.0.11.2, enp0s8, weight 1, 00:09:04
 O   192.168.30.0/24 [110/100] is directly connected, enp0s10, weight 1, 00:09:39
 
 ```
-### 2. Изобразить ассиметричный роутинг
+### 2. Изобразить асимметричный роутинг
 - На всех виртуалках выполнить команду: 
 ```
 sysctl net.ipv4.conf.all.rp_filter=0
@@ -134,7 +134,7 @@ listening on enp0s9, link-type EN10MB (Ethernet), capture size 262144 bytes
 16:55:11.929126 IP 192.168.10.1 > router2: ICMP echo request, id 1, seq 50, length 64
 16:55:12.930215 IP 192.168.10.1 > router2: ICMP echo request, id 1, seq 51, length 64
   ```
-### 3. Изобразить ссиметричный роутинг
+### 3. Изобразить симметричный роутинг
 - На `router2` меняем стоимость интерфейса `enp0s8`:
 ```
 router2# conf t
